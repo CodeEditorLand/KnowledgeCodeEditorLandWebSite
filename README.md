@@ -1,4 +1,1 @@
-# [Knowledge 🔎 Code 💻 Editor 🔧 Land 🏞️ WebSite 🗾]
-
-[Knowledge 🔎 Code 💻 Editor 🔧 Land 🏞️ WebSite 🗾]:
-	HTTPS://Knowledge.Code.Editor.Land
+# [Knowledge 🔎 Code 💻 Editor 🔧 Land 🏞️ WebSite 🗾](HTTPS://Knowledge.Code.Editor.Land)

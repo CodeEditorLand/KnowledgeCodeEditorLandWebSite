@@ -3,9 +3,8 @@ const __vite__mapDeps = (
 	m = __vite__mapDeps,
 	d = m.f ||
 		(m.f = [
-			"_astro/Animation.TMcDIgyf.js",
+			"_astro/Animation.Bj6muMLy.js",
 			"_astro/preload-helper.D21cck6N.js",
-			"_astro/Color.zZZKoFZe.js",
 		]),
 ) => i.map((i) => d[i]);
 import { _ as e } from "./preload-helper.D21cck6N.js";
@@ -23,8 +22,8 @@ class t {
 	Calculate(e, t) {
 		const {
 				DIMENSION: r,
-				AMPLITUDE_BASE: i,
-				AMPLITUDE_VARIATION: n,
+				AMPLITUDE_BASE: n,
+				AMPLITUDE_VARIATION: i,
 				MULTIPLIER_TIME_BASE: o,
 				MULTIPLIER_TIME_VARIATION: c,
 				COLOR_STEPS: u,
@@ -38,7 +37,7 @@ class t {
 					a,
 					l,
 					s(this.TimeCurrent * (o + l * c) + this.Seed, 1e3 * l),
-					i + l * n,
+					n + l * i,
 					e,
 					t,
 					I,
@@ -49,19 +48,19 @@ class t {
 			{ X: 0, Y: 0, Rotation: 0, Scale: 1 },
 		);
 	}
-	Apply(e, t, a, s, r, i, n, o) {
+	Apply(e, t, a, s, r, n, i, o) {
 		switch (t) {
 			case 0:
-				e.X = a * s + r * n;
+				e.X = a * s + r * i;
 				break;
 			case 1:
-				e.Y = a * s + i * n;
+				e.Y = a * s + n * i;
 				break;
 			case 2:
-				e.Rotation = a * o * n;
+				e.Rotation = a * o * i;
 				break;
 			case 3:
-				e.Scale = 1 + 0.5 * a * n;
+				e.Scale = 1 + 0.5 * a * i;
 		}
 	}
 }
@@ -71,9 +70,9 @@ const { default: a } = await e(async () => {
 	}, []),
 	{ Layer: s } = await e(
 		async () => {
-			const { Layer: e } = await import("./Animation.TMcDIgyf.js");
+			const { Layer: e } = await import("./Animation.Bj6muMLy.js");
 			return { Layer: e };
 		},
-		__vite__mapDeps([0, 1, 2]),
+		__vite__mapDeps([0, 1]),
 	);
 export { a as Constant, s as Layer, t as default };

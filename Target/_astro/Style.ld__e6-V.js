@@ -3,13 +3,12 @@ const __vite__mapDeps = (
 	m = __vite__mapDeps,
 	d = m.f ||
 		(m.f = [
-			"_astro/Animation.TMcDIgyf.js",
+			"_astro/Animation.Bj6muMLy.js",
 			"_astro/preload-helper.D21cck6N.js",
-			"_astro/Color.zZZKoFZe.js",
 		]),
 ) => i.map((i) => d[i]);
 import { _ as t } from "./preload-helper.D21cck6N.js";
-import { j as s } from "./web.CCnzT9kG.js";
+import { j as s } from "./web.d7l3FkaN.js";
 class i {
 	Element;
 	TimeNoise;
@@ -129,10 +128,10 @@ const { default: e } = await t(async () => {
 	{ Layer: o, Lerp: h } = await t(
 		async () => {
 			const { Layer: t, Lerp: s } = await import(
-				"./Animation.TMcDIgyf.js"
+				"./Animation.Bj6muMLy.js"
 			);
 			return { Layer: t, Lerp: s };
 		},
-		__vite__mapDeps([0, 1, 2]),
+		__vite__mapDeps([0, 1]),
 	);
 export { e as Constant, o as Layer, h as Lerp, i as default };

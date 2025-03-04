@@ -1,12 +1,12 @@
 {
   "Source/Function/Scroll/Code/Pixel.tsx": {
-    "file": "_astro/Pixel.mXUmH9UP.js",
+    "file": "_astro/Pixel.D5x0q-e0.js",
     "name": "Pixel",
     "src": "Source/Function/Scroll/Code/Pixel.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_preload-helper.D21cck6N.js",
-      "_web.CCnzT9kG.js"
+      "_web.d7l3FkaN.js"
     ],
     "dynamicImports": [
       "Source/Function/Scroll/Code/Pixel/Dimensional.ts",
@@ -16,13 +16,12 @@
     ]
   },
   "Source/Function/Scroll/Code/Pixel/Animation.ts": {
-    "file": "_astro/Animation.TMcDIgyf.js",
+    "file": "_astro/Animation.Bj6muMLy.js",
     "name": "Animation",
     "src": "Source/Function/Scroll/Code/Pixel/Animation.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_preload-helper.D21cck6N.js",
-      "_Color.zZZKoFZe.js"
+      "_preload-helper.D21cck6N.js"
     ],
     "dynamicImports": [
       "node_modules/simplex-noise/dist/esm/simplex-noise.js",
@@ -36,7 +35,7 @@
     "isDynamicEntry": true
   },
   "Source/Function/Scroll/Code/Pixel/Dimensional.ts": {
-    "file": "_astro/Dimensional.CtyTXclv.js",
+    "file": "_astro/Dimensional.CpnsX5IC.js",
     "name": "Dimensional",
     "src": "Source/Function/Scroll/Code/Pixel/Dimensional.ts",
     "isDynamicEntry": true,
@@ -49,34 +48,21 @@
     ]
   },
   "Source/Function/Scroll/Code/Pixel/Style.ts": {
-    "file": "_astro/Style.YLG4yruE.js",
+    "file": "_astro/Style.ld__e6-V.js",
     "name": "Style",
     "src": "Source/Function/Scroll/Code/Pixel/Style.ts",
     "isDynamicEntry": true,
     "imports": [
       "_preload-helper.D21cck6N.js",
-      "_web.CCnzT9kG.js"
+      "_web.d7l3FkaN.js"
     ],
     "dynamicImports": [
       "Source/Function/Scroll/Code/Pixel/Animation/Constant.ts",
       "Source/Function/Scroll/Code/Pixel/Animation.ts"
     ]
   },
-  "Source/Function/Table/Layout.astro?astro&type=script&index=0&lang.ts": {
-    "file": "_astro/Layout.astro_astro_type_script_index_0_lang.FAspuo_G.js",
-    "name": "Layout.astro_astro_type_script_index_0_lang",
-    "src": "Source/Function/Table/Layout.astro?astro&type=script&index=0&lang.ts",
-    "isEntry": true,
-    "imports": [
-      "node_modules/simplex-noise/dist/esm/simplex-noise.js",
-      "_Color.zZZKoFZe.js"
-    ],
-    "css": [
-      "_astro/Layout.B6Dad6Mu.css"
-    ]
-  },
   "Source/Layout/Base.astro?astro&type=script&index=0&lang.ts": {
-    "file": "_astro/Base.astro_astro_type_script_index_0_lang.DAQDaONi.js",
+    "file": "_astro/Base.astro_astro_type_script_index_0_lang.C4yrCdwa.js",
     "name": "Base.astro_astro_type_script_index_0_lang",
     "src": "Source/Layout/Base.astro?astro&type=script&index=0&lang.ts",
     "isEntry": true,
@@ -93,10 +79,6 @@
     "src": "Source/Variable/Scroll/Matrix.ts",
     "isDynamicEntry": true
   },
-  "_Color.zZZKoFZe.js": {
-    "file": "_astro/Color.zZZKoFZe.js",
-    "name": "Color"
-  },
   "_index.ftVfT69A.js": {
     "file": "_astro/index.ftVfT69A.js",
     "name": "index"
@@ -105,24 +87,24 @@
     "file": "_astro/preload-helper.D21cck6N.js",
     "name": "preload-helper"
   },
-  "_web.CCnzT9kG.js": {
-    "file": "_astro/web.CCnzT9kG.js",
+  "_web.d7l3FkaN.js": {
+    "file": "_astro/web.d7l3FkaN.js",
     "name": "web",
     "isDynamicEntry": true
   },
   "astro-entry:@Function/Scroll/Code": {
-    "file": "_astro/Code.j4z9ZV9f.js",
+    "file": "_astro/Code.BldW63qW.js",
     "name": "Code",
     "src": "astro-entry:@Function/Scroll/Code",
     "isEntry": true,
     "imports": [
       "_preload-helper.D21cck6N.js",
-      "_web.CCnzT9kG.js"
+      "_web.d7l3FkaN.js"
     ],
     "dynamicImports": [
       "Source/Function/Scroll/Code/Pixel.tsx",
       "Source/Variable/Scroll/Matrix.ts",
-      "_web.CCnzT9kG.js"
+      "_web.d7l3FkaN.js"
     ]
   },
   "astro:scripts/page.js": {
@@ -135,16 +117,16 @@
     ]
   },
   "node_modules/@astrojs/solid-js/dist/client.js": {
-    "file": "_astro/client.DWV50bj1.js",
+    "file": "_astro/client.DQxvgEyj.js",
     "name": "client",
     "src": "node_modules/@astrojs/solid-js/dist/client.js",
     "isEntry": true,
     "imports": [
-      "_web.CCnzT9kG.js"
+      "_web.d7l3FkaN.js"
     ]
   },
   "node_modules/astro/components/ClientRouter.astro?astro&type=script&index=0&lang.ts": {
-    "file": "_astro/ClientRouter.astro_astro_type_script_index_0_lang.DElhdQ9j.js",
+    "file": "_astro/ClientRouter.astro_astro_type_script_index_0_lang.Bf0-8Hxx.js",
     "name": "ClientRouter.astro_astro_type_script_index_0_lang",
     "src": "node_modules/astro/components/ClientRouter.astro?astro&type=script&index=0&lang.ts",
     "isEntry": true,
@@ -153,7 +135,7 @@
     ]
   },
   "node_modules/firebase/app/dist/esm/index.esm.js": {
-    "file": "_astro/index.esm.DMCO24_P.js",
+    "file": "_astro/index.esm.CH6WyvPW.js",
     "name": "index.esm",
     "src": "node_modules/firebase/app/dist/esm/index.esm.js",
     "isDynamicEntry": true

@@ -1,0 +1,7 @@
+Cache/Table/*.json eol=lf
+
+Public/Cache/Tag/*.json eol=lf
+Target/Cache/Tag/*.json eol=lf
+
+Public/Cache/Commit/*.json eol=lf
+Target/Cache/Commit/*.json eol=lf

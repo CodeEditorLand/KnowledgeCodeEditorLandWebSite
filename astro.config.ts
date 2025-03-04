@@ -1,14 +1,30 @@
-import type { defineConfig } from "astro/config";
+import { defineConfig, envField } from "astro/config";
 
 export const On = process.env["NODE_ENV"] === "development";
 
 export default (await import("astro/config")).defineConfig({
+	env: {
+		schema: {
+			TOKEN_GITHUB_COMMIT_STATUS_EDITOR_LAND: envField.string({
+				context: "server",
+				access: "secret",
+				optional: false,
+				default: "GitHub Token API Stream",
+			}),
+			CF_PAGES_COMMIT_SHA: envField.string({
+				context: "server",
+				access: "secret",
+				optional: true,
+				default: "1",
+			}),
+		},
+		validateSecrets: true,
+	},
 	srcDir: "./Source",
 	publicDir: "./Public",
 	outDir: "./Target",
-	// TODO Place your site URL here
-	// site: "",
-	compressHTML: true,
+	site: On ? "HTTP://localhost" : "HTTPS://Knowledge.Code.Editor.Land",
+	compressHTML: !On,
 	prefetch: {
 		defaultStrategy: "hover",
 		prefetchAll: true,
@@ -20,14 +36,50 @@ export default (await import("astro/config")).defineConfig({
 		concurrency: 9999,
 	},
 	integrations: [
+		!On
+			? {
+					name: "Cache",
+					hooks: {
+						"astro:build:start": async (): void => {
+							for (const File of await Glob("**/*.json", {
+								cwd: join(process.cwd(), "Cache"),
+								absolute: true,
+								onlyFiles: true,
+							})) {
+								try {
+									if (
+										Date.now() -
+											JSON.parse(
+												await readFile(File, {
+													encoding: "utf-8",
+												}),
+											).TimeStamp >
+										7 * 24 * 60 * 60 * 1000
+									) {
+										await unlink(File);
+									}
+								} catch (_Error) {
+									await unlink(File);
+								}
+							}
+						},
+					},
+				}
+			: null,
+		(await import("@astrojs/solid-js")).default({
+			// @ts-ignore
+			devtools: On,
+		}),
 		// @ts-ignore
 		import.meta.env.MODE === "production"
 			? (await import("astrojs-service-worker")).default()
 			: null,
 		(await import("@astrojs/sitemap")).default(),
-		(await import("@playform/inline")).default({ Logger: 1 }),
-		(await import("@playform/format")).default({ Logger: 1 }),
-		(await import("@playform/compress")).default({ Logger: 1 }),
+		!On ? (await import("@playform/inline")).default({ Logger: 1 }) : null,
+		!On ? (await import("@playform/format")).default({ Logger: 1 }) : null,
+		!On
+			? (await import("@playform/compress")).default({ Logger: 1 })
+			: null,
 	],
 	experimental: {
 		clientPrerender: true,
@@ -82,7 +134,7 @@ export default (await import("astro/config")).defineConfig({
 			preserveSymlinks: true,
 		},
 		css: {
-			devSourcemap: true,
+			devSourcemap: On,
 			transformer: "postcss",
 		},
 		plugins: [
@@ -114,3 +166,9 @@ export default (await import("astro/config")).defineConfig({
 		],
 	},
 }) as defineConfig;
+
+export const { unlink, readFile } = await import("node:fs/promises");
+
+export const { join } = await import("node:path");
+
+export const { default: Glob } = await import("fast-glob");

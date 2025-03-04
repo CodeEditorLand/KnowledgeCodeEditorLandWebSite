@@ -1,27 +1,20 @@
 {
-	"name": "@playform/starter",
+	"name": "@website/knowledge_code_editor_land",
 	"version": "0.0.1",
 	"private": true,
-	"description": "Starter 📄",
-	"keywords": [
-		"astro",
-		"starter",
-		"skeleton",
-		"playform"
-	],
-	"homepage": "HTTPS://GitHub.Com/PlayForm/Starter#readme",
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/KnowledgeCodeEditorLandWebSite#readme",
 	"bugs": {
-		"url": "HTTPS://GitHub.Com/PlayForm/Starter/issues"
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/KnowledgeCodeEditorLandWebSite/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/PlayForm/Starter.git"
+		"url": "git+https://github.com/CodeEditorLand/KnowledgeCodeEditorLandWebSite.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "Source ✍🏻 Open 👐🏻",
-		"email": "Source/Open@PlayForm.LTD",
-		"url": "HTTPS://PlayForm.LTD"
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
 	},
 	"scripts": {
 		"Run": "astro dev --host",
@@ -29,33 +22,47 @@
 	},
 	"dependencies": {
 		"@astrojs/sitemap": "3.2.1",
+		"@astrojs/solid-js": "5.0.4",
+		"@octokit/core": "6.1.4",
+		"@octokit/rest": "21.1.1",
 		"@playform/build": "0.2.1",
 		"@playform/compress": "0.1.7",
 		"@playform/format": "0.0.8",
 		"@playform/inline": "0.1.1",
+		"@rollup/plugin-inject": "5.0.5",
 		"@tailwindcss/aspect-ratio": "0.4.2",
 		"@tailwindcss/forms": "0.5.10",
 		"@tailwindcss/typography": "0.5.16",
-		"astro": "5.4.1",
+		"astro": "5.3.0",
 		"astro-capo": "0.0.1",
 		"astrojs-service-worker": "2.0.0",
 		"autoprefixer": "10.4.20",
 		"cssnano": "7.0.6",
 		"cssnano-preset-advanced": "7.0.6",
 		"dotenv": "16.4.7",
-		"firebase": "11.4.0",
+		"fast-glob": "3.3.3",
+		"firebase": "11.3.1",
+		"jquery": "3.7.1",
+		"jszip": "3.10.1",
+		"pdfmake": "0.2.18",
 		"postcss": "8.5.3",
 		"postcss-combine-duplicated-selectors": "10.0.3",
 		"postcss-combine-media-query": "1.0.1",
 		"postcss-import": "16.1.0",
 		"postcss-reporter": "7.1.0",
 		"postcss-url": "10.1.3",
+		"sass": "1.85.0",
+		"simplex-noise": "4.0.3",
+		"solid-devtools": "0.33.0",
+		"solid-js": "1.9.4",
 		"tailwindcss": "3.4.17",
-		"typescript": "5.8.2",
+		"typescript": "5.7.3",
 		"zod": "3.24.2"
 	},
 	"devDependencies": {
-		"@astrojs/ts-plugin": "1.10.4"
+		"@astrojs/ts-plugin": "1.10.4",
+		"@octokit/types": "13.8.0",
+		"@types/jquery": "3.5.32"
 	},
 	"publishConfig": {
 		"access": "restricted",

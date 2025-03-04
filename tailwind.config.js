@@ -15,10 +15,11 @@ export default {
 		},
 		extend: {
 			transitionTimingFunction: {
-				apple: "cubic-bezier(0.21, 0.1, 0.21, 1)",
+				Ease: "cubic-bezier(0.21, 0.1, 0.21, 1)",
 			},
 			fontFamily: {
 				sans: ["Albert Sans", ...fontFamily.sans],
+				Hack: ["Hack", ...fontFamily.mono],
 			},
 			typography: {
 				DEFAULT: {
@@ -29,10 +30,7 @@ export default {
 					},
 				},
 			},
-			colors: {
-				backgroundLight: "var(--background-light)",
-				backgroundDark: "var(--background-dark)",
-			},
+			colors: require("./Source/Function/TailWind/Color.ts"),
 		},
 	},
 
@@ -43,4 +41,7 @@ export default {
 		require("@tailwindcss/typography"),
 		require("@tailwindcss/aspect-ratio"),
 	],
+
+	// TODO: Link that to the dynamic components inside ./Source/Function/Scroll/Layout.astro
+	safelist: ["h-2", "w-2"],
 };

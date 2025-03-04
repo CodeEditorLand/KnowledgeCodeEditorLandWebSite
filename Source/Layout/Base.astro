@@ -1,16 +1,21 @@
 ---
 import "@Stylesheet/Base.css";
 
+import Scroll from "@Function/Scroll/Layout.astro";
 import { Head } from "astro-capo";
 import { ClientRouter } from "astro:transitions";
 
-// TODO Place your title and description here
-const { Title = "", Description = "" } = Astro.props;
+const {
+	Title = "Knowledge 🔎 Code 💻 WebSite 🗾 Land 🏞️",
+	Description = "Knowledge website for the Land repository.",
+} = Astro.props;
 
 interface Props {
 	Title?: string;
 	Description?: string;
 }
+
+const Index = Astro.url.pathname === "/" ? "-1" : "";
 ---
 
 <!doctype html>
@@ -27,8 +32,7 @@ interface Props {
 
 		<meta name="description" content={Description} />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- TODO Define your color theme in hex here -->
-		<meta name="theme-color" content="" />
+		<meta name="theme-color" content="#ffffff" />
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="twitter:dnt" content="on" />
 
@@ -55,9 +59,20 @@ interface Props {
 		<ClientRouter />
 	</Head>
 	<body>
-		<div class="grow">
-			<slot />
+		<div class="container">
+			<div class="grow">
+				<slot />
+
+				<a
+					href="/"
+					title="Knowledge 🔎 Land 🏞️"
+					tabindex={Index}
+					class="float-right inline-block w-auto">
+					<Scroll Text="Knowledge" />
+				</a>
+			</div>
 		</div>
+
 		<script>
 			import "@Script/Firebase";
 		</script>

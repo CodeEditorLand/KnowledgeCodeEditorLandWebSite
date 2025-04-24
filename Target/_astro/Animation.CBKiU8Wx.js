@@ -1,4 +1,4 @@
-import { _ as f } from "./preload-helper.D21cck6N.js";
+import { _ as f } from "./preload-helper.Cat91CNq.js";
 const e = {
 		backgroundLight: "var(--background-light)",
 		backgroundDark: "var(--background-dark)",

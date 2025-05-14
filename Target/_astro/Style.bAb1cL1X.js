@@ -8,7 +8,7 @@ const __vite__mapDeps = (
 		]),
 ) => i.map((i) => d[i]);
 import { _ as t } from "./preload-helper.Cat91CNq.js";
-import { j as s } from "./web.d7l3FkaN.js";
+import { createEffect as s } from "./solid.BM37VfZ_.js";
 class i {
 	Element;
 	TimeNoise;

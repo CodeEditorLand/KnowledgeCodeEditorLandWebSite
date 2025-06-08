@@ -24,7 +24,7 @@ export default defineConfig({
 	srcDir: "./Source",
 	publicDir: "./Public",
 	outDir: "./Target",
-	site: On ? "HTTP://localhost" : "https://Knowledge.Code.Editor.Land",
+	site: On ? "http://localhost" : "https://Knowledge.Code.Editor.Land",
 	compressHTML: !On,
 	prefetch: {
 		defaultStrategy: "hover",

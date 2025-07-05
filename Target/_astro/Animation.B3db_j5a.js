@@ -1,4 +1,4 @@
-import { _ as f } from "./preload-helper.Cat91CNq.js";
+import { _ as f } from "./preload-helper.BhLMWRjL.js";
 const e = {
 		backgroundLight: "var(--background-light)",
 		backgroundDark: "var(--background-dark)",
@@ -292,7 +292,7 @@ const e = {
 	a = (
 		await f(async () => {
 			const { createNoise2D: f } = await import(
-				"./simplex-noise.DztDy58a.js"
+				"./simplex-noise.6iXjES4d.js"
 			);
 			return { createNoise2D: f };
 		}, [])
